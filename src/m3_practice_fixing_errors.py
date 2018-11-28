@@ -31,20 +31,20 @@ Authors: Jingyi. Jia(Alan)
 
 import rosegraphics as rg
 
-import.math()
+import math
 def main():
     """ Calls the other functions in this module to demo them. """
     print_math()
-    tutle_fn()
+    turtle_fun()
 
 
-def print_math:
+def print_math():
     """ Prints some calculated values. """
-    x = cos(pi)
+    x = math.cos(math.pi)
     print(x)
 
-    y = sin(pi)
-    print(y)
+    y = math.sin(math.pi)
+    print("sin of pi is" "y")
 
 
 def turtle_fun():
@@ -53,20 +53,19 @@ def turtle_fun():
     constructs a classic SimpleTurtle and asks it to do some things,
     and waits for the user to click anywhere in the window to close it.
     """
-    window = rg.TurtleWindow()
+window = rg.TurtleWindow()
 
-    alan = rg.SimpleTurtle()
+alan = rg.SimpleTurtle()
 alan.pen = rg.Pen('blue', 30)
-    alan.paint_bucket = rg.PaintBucket('yellow')
+alan.paint_bucket = rg.PaintBucket('yellow')
 
-    alan.back(3 * (47 + 16)
-    al.begin_fill()
-    alan.circle(25)
-    alan.end_fill()
+alan.backward(3 * (47 + 16))
+alan.begin_fill()
+alan.draw_circle(25)
+alan.end_fill()
+alan.forward(200)
 
-    forward(200)
-
-    window.close_on_mouse_click()
+window.close_on_mouse_click()
 
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.

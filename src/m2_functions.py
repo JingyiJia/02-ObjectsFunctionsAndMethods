@@ -79,8 +79,7 @@ window.pen = rg.Pen('green',5)
 window.forward(100)
 window2 = rg.SimpleTurtle('turtle')
 window2.pen = rg.Pen('red',5)
-window2.left(180)
-window2.forward(100)
+window2.backward(100)
 Window.close_on_mouse_click()
 ###############################################################################
 # Done: 5.
