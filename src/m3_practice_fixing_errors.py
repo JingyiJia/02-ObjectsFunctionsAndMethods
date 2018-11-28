@@ -66,8 +66,9 @@ alan.end_fill()
 alan.forward(200)
 
 window.close_on_mouse_click()
-
+# finish! 
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
 # -----------------------------------------------------------------------------
 main()
+
