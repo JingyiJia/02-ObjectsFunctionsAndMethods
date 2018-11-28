@@ -2,12 +2,11 @@
 Practice DEFINING and CALLING
      FUNCTIONS
 
-Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
-         Aaron Wilkin, their colleagues, and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+Authors: Jingyi.Jia(Alan)
+"""  # Done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ###############################################################################
-# TODO: 2.
+# Done: 2.
 #   Allow this module to use the  rosegraphics.py  module by marking the
 #     src
 #   folder in this project as a "Sources Root", as follows:
@@ -28,7 +27,7 @@ def main():
 
 
 ###############################################################################
-# TODO: 3a.  Define a function immediately below this _TODO_.
+# Done: 3a.  Define a function immediately below this _TODO_.
 #   It takes two arguments that denote, for a right triangle,
 #   the lengths of the two sides adjacent to its right angle,
 #   and it returns the length of the hypotenuse of that triangle.
@@ -40,7 +39,11 @@ def main():
 #   to test whether you defined the function correctly.
 #
 ###############################################################################
-
+import math
+def hypotenuse(a,b):
+    c = math.sqrt(a**2+b**2)
+    return(c)
+print(hypotenuse(3,4))
 
 ###############################################################################
 # TODO: 4a.  Define a function immediately below this _TODO_.
@@ -65,14 +68,22 @@ def main():
 #
 #   You may name the function and its parameters whatever you wish.
 #
-# TODO: 4b.  In main, CALL your function at least TWICE (with different values
+# Done: 4b.  In main, CALL your function at least TWICE (with different values
 #   for the arguments) to test whether you defined the function correctly.
 #
 ###############################################################################
 
-
+window = rg.SimpleTurtle('turtle')
+Window = rg.TurtleWindow()
+window.pen = rg.Pen('green',5)
+window.forward(100)
+window2 = rg.SimpleTurtle('turtle')
+window2.pen = rg.Pen('red',5)
+window2.left(180)
+window2.forward(100)
+Window.close_on_mouse_click()
 ###############################################################################
-# TODO: 5.
+# Done: 5.
 #   COMMIT-and-PUSH your work (after changing this TO-DO to DONE).
 #
 #   As a reminder, here is how you should do so:
