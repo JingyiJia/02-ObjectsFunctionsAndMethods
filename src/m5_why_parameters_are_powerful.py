@@ -1,9 +1,8 @@
 """
 This module lets you experience the POWER of FUNCTIONS and PARAMETERS.
 
-Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
-         Aaron Wilkin, their colleagues, and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+Authors: Jingyi. Jia(Alan)
+"""  # Done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import rosegraphics as rg
 
@@ -21,8 +20,8 @@ def main():
     # comment-out the following two statements and replace them
     # by calls to   better_draw_circles   et al as needed.
     # -------------------------------------------------------------------------
-    draw_circles(rg.Point(100, 50))
-    draw_circles(rg.Point(-200, 0))
+    # draw_circles(rg.Point(100, 50))
+    # draw_circles(rg.Point(-200, 0))
 
     window.update()
     window.close_on_mouse_click()
