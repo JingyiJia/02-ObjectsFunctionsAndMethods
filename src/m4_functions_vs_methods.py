@@ -125,31 +125,44 @@ def draw_many_squares(my_turtle, number_of_squares, size, twist):
 
 
 def try_methods():
-    """
-    Constructs a SimpleTurtle and sets its   pen   to a new rg.Pen
-    that is 'brown' with thickness 5.
-    Then makes the SimpleTurtle move as follows (in the order listed):
-      -- forward   150 units
-      -- left       90 degrees
-      -- forward    50 units
-      -- backward  100 units
+    apple = rg. SimpleTurtle('turtle')
+    apple.pen = rg.Pen('brown',5)
+    apple.speed = 5
+    apple.forward(150)
+    apple.left(90)
+    apple.forward(50)
+    apple.backward(100)
+
+    #  Constructs a SimpleTurtle and sets its   pen   to a new rg.Pen
+    # that is 'brown' with thickness 5.
+    # Then makes the SimpleTurtle move as follows (in the order listed):
+    #   -- forward   150 units
+    #   -- left       90 degrees
+    #   -- forward    50 units
+    #   -- backward  100 units
     """
     ###########################################################################
-    # TODO: 4. Implement and test this function, per its doc-string above.
+    # Done: 4. Implement and test this function, per its doc-string above.
     #   The testing code (in main) is already written for you.
     ###########################################################################
+
 
 
 ###############################################################################
 # IMPORTANT: Read the NOTE below before you try to implement the next function!
 ###############################################################################
 def try_functions():
-    """
-    Causes several SimpleTurtles to do the following:
-     -- One jumps to (200, 100), then moves (while drawing) to (300, 30)
-     -- One jumps to (100, 200), then moves (while drawing) to (0, 0)
-     -- One jumps to (-50, 50), then moves (while drawing) to (100, 100)
-    """
+    
+    # Causes several SimpleTurtles to do the following:
+    #  -- One jumps to (200, 100), then moves (while drawing) to (300, 30)
+    #  -- One jumps to (100, 200), then moves (while drawing) to (0, 0)
+    #  -- One jumps to (-50, 50), then moves (while drawing) to (100, 100)
+    # """
+def try_functions():
+    jump_and_move_turtle(200,100,300,30)
+    jump_and_move_turtle(100,200,0,0)
+    jump_and_move_turtle(-50,50,100,100)
+
     ###########################################################################
     # TODO: 5. Implement and test this function, per its doc-string above.
     #   The testing code (in main) is already written for you.
