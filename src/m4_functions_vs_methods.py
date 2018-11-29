@@ -3,7 +3,8 @@ Demonstrates using (calling) FUNCTIONS and using (calling) METHODS:
   -- what is similar, and
   -- how they differ.
 
-Authors: Jingyi.Jia(Alan)
+Authors:  David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
+         Aaron Wilkin, their colleagues, and Jingyi.Jia(Alan)
 """  # Done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ###############################################################################
@@ -178,39 +179,60 @@ def try_functions():
 # IMPORTANT: Read the NOTE below before you try to implement the next function!
 ###############################################################################
 def try_methods_and_functions():
-    """
-    Constructs a SimpleTurtle and sets its   pen  to a new rg.Pen
-    that is 'blue' with thickness 5.
 
-    Then makes the SimpleTurtle do the following (in the order listed):
+        star = rg.SimpleTurtle('turtle')
+        star.pen = rg.Pen('blue',5)
+        star.backward(150)
 
-      1. Go  backward  150 units.
+        star.speed = 1
+        draw_many_squares(star,2,100,15)
 
-      2. Change its speed to 1 (slowest).
-         Draw 2 squares whose size (width and height) are 100,
-         each "twisted" from the previous by 30 degrees.
+        star.speed = 5
+        star.pen = rg.Pen('red',5)
+        draw_many_squares(star,10,50,15)
+        star.speed = 100
+        star.pen = rg.Pen('red',35)
+        draw_many_squares(star,8,300,60)
 
-      3. Change its speed to 5 (faster).
-         Change its Pen's color to 'red'.
-         Draw 10 squares whose size (width and height) are 50,
-         each "twisted" from the previous by 15 degrees.
+        star.pen = rg.Pen('black',3)
 
-      4. Change its speed to 100 (about the fastest possible).
-         Change its Pen's thickness to 35.
-         Draw 8 squares whose size (width and height) are 300,
-         each "twisted" from the previous by 60 degrees.
+        star.backward(200)
+        star.draw_circle(30)
+        star.draw_square(50)
 
-      5. Change its Pen to be a NEW Pen whose color is 'black'
-         and whose thickness is 3.
-
-      6. Go backward  200 units.
-
-      7. Draw a CIRCLE whose radius is 30.
-
-      8. Draw a SQUARE whose sides are each of length 50.
-    """
+    # """
+    # Constructs a SimpleTurtle and sets its   pen  to a new rg.Pen
+    # that is 'blue' with thickness 5.
+    #
+    # Then makes the SimpleTurtle do the following (in the order listed):
+    #
+    #   1. Go  backward  150 units.
+    #
+    #   2. Change its speed to 1 (slowest).
+    #      Draw 2 squares whose size (width and height) are 100,
+    #      each "twisted" from the previous by 30 degrees.
+    #
+    #   3. Change its speed to 5 (faster).
+    #      Change its Pen's color to 'red'.
+    #      Draw 10 squares whose size (width and height) are 50,
+    #      each "twisted" from the previous by 15 degrees.
+    #
+    #   4. Change its speed to 100 (about the fastest possible).
+    #      Change its Pen's thickness to 35.
+    #      Draw 8 squares whose size (width and height) are 300,
+    #      each "twisted" from the previous by 60 degrees.
+    #
+    #   5. Change its Pen to be a NEW Pen whose color is 'black'
+    #      and whose thickness is 3.
+    #
+    #   6. Go backward  200 units.
+    #
+    #   7. Draw a CIRCLE whose radius is 30.
+    #
+    #   8. Draw a SQUARE whose sides are each of length 50.
+    # """
     ###########################################################################
-    # TODO: 6. Implement and test this function, per its doc-string above.
+    # Done: 6. Implement and test this function, per its doc-string above.
     #   The testing code (in main) is already written for you.
     #
     #   NOTE: This function should ** CALL ** the

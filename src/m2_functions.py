@@ -2,7 +2,8 @@
 Practice DEFINING and CALLING
      FUNCTIONS
 
-Authors: Jingyi.Jia(Alan)
+Authors:  David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
+         Aaron Wilkin, their colleagues, and Jingyi.Jia(Alan)
 """  # Done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ###############################################################################
